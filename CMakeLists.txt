@@ -1,7 +1,14 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(main VERSION 0.1.0 LANGUAGES C CXX)
 
-add_executable(main main.cpp RubiksCube.cpp RubiksCube.h RubiksCube1dArray.cpp RubiksCube3dArray.cpp RubiksCubeBitboard.cpp)
+add_executable(main main.cpp 
+    Model/RubiksCube.cpp 
+    Model/RubiksCube.h 
+    Model/RubiksCube1dArray.cpp 
+    Model/RubiksCube3dArray.cpp 
+    Model/RubiksCubeBitboard.cpp
+    Solvers/DFSSolver.h
+)
 
 include(CTest)
 enable_testing()

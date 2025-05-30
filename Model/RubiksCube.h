@@ -8,6 +8,10 @@ using namespace std;
 
 class RubiksCube {
 public:
+
+    // assigning enums for 6-faces
+    //6 different color
+    //and 18 moves
     enum class FACE {
         UP,
         LEFT,
@@ -37,7 +41,6 @@ public:
 
    
     virtual COLOR getColor(FACE face, unsigned row, unsigned col) const = 0;
-
     
     static char getColorLetter(COLOR color);
 

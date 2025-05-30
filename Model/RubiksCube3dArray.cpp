@@ -10,6 +10,7 @@ private:
                 temp_arr[i][j] = cube[ind][i][j];
             }
         }
+
         for (int i = 0; i < 3; i++) cube[ind][0][i] = temp_arr[2 - i][0];
         for (int i = 0; i < 3; i++) cube[ind][i][2] = temp_arr[0][i];
         for (int i = 0; i < 3; i++) cube[ind][2][2 - i] = temp_arr[i][2];
@@ -261,5 +262,4 @@ struct Hash3d {
         }
         return hash<string>()(str);
     }
-
 };
