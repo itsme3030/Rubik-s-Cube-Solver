@@ -8,6 +8,7 @@ add_executable(main main.cpp
     Model/RubiksCube3dArray.cpp 
     Model/RubiksCubeBitboard.cpp
     Solvers/DFSSolver.h
+    Solvers/BFSSolver.h
 )
 
 include(CTest)
