@@ -10,6 +10,18 @@ add_executable(main main.cpp
     Solvers/DFSSolver.h
     Solvers/BFSSolver.h
     Solvers/IDDFSSolver.h
+    Solvers/IDAstarSolver.h
+    PatternDatabases/CornerDBMaker.cpp
+    PatternDatabases/CornerDBMaker.h
+    PatternDatabases/CornerPatternDatabase.cpp
+    PatternDatabases/CornerPatternDatabase.h
+    PatternDatabases/math.cpp
+    PatternDatabases/math.h
+    PatternDatabases/NibbleArray.cpp
+    PatternDatabases/NibbleArray.h
+    PatternDatabases/PatternDatabase.cpp
+    PatternDatabases/PatternDatabase.h
+    PatternDatabases/PermutationIndexer.h
 )
 
 include(CTest)
